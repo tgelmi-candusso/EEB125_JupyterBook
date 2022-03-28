@@ -1,0 +1,72 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Week_1
+    numbered: False
+    chapters:
+<<<<<<< HEAD
+      - file: W1_class
+      - file: W1_lab
+      - file: W1_HW
+  - caption: Week_2
+    numbered: False
+    chapters:
+      - file: W2_class1
+      - file: W2_class2
+      - file: W2_class3
+      - file: W2_lab
+      - file: W2_HW
+  - caption: Week_3
+    numbered: False
+    chapters:
+      - file: W3_class
+      - file: W3_lab
+      - file: W3_HW
+  - caption: Week_4
+    numbered: False
+    chapters:
+      - file: W4_class1
+      - file: W4_class2
+      - file: W4_lab
+      - file: W4_HW
+  - caption: Week_5
+    numbered: False
+    chapters:
+      - file: W5_class1
+      - file: W5_class2
+      - file: W5_lab
+      - file: W5_HW
+  - caption: Week_6-Midterm Project
+    numbered: False
+    chapters:
+      - file: Midterm
+  - caption: Week_7
+    numbered: False
+    chapters:
+      - file: W7_class
+      - file: W7_lab
+      - file: W7_HW
+  - caption: Week_8
+    numbered: False
+    chapters:
+      - file: W8_class
+      - file: W8_lab
+  - caption: Week_9
+    numbered: False
+    chapters:
+      - file: W9_class
+      - file: W9_lab
+  - caption: Final_Project
+    numbered: False
+    chapters:
+      - file: FinalProject_proposal_Instructions
+      - file: FinalPoject_Presentation_Instructions
+      - file: FinalProject_Slide_show_Instructions
+
+=======
+      - file: Lecture_1
+      - file: Lab_Handout_1
+>>>>>>> d843605ada4a919b8e4eaafc1aede0d27d85b8f6
