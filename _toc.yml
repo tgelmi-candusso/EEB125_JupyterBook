@@ -7,7 +7,6 @@ parts:
   - caption: Week_1
     numbered: False
     chapters:
-<<<<<<< HEAD
       - file: W1_class
       - file: W1_lab
       - file: W1_HW
@@ -65,8 +64,3 @@ parts:
       - file: FinalProject_proposal_Instructions
       - file: FinalPoject_Presentation_Instructions
       - file: FinalProject_Slide_show_Instructions
-
-=======
-      - file: Lecture_1
-      - file: Lab_Handout_1
->>>>>>> d843605ada4a919b8e4eaafc1aede0d27d85b8f6
