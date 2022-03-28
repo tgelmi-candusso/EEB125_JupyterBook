@@ -126,7 +126,7 @@ type(5.1)
 # In[6]:
 
 
-type('Hello World')
+'''type('Hello World')'''
 
 
 # Any time you make a change to the code cell, you need to re-run that cell to see the effect. However, if our downstream cells rely on values or variables (up next!) in upstream cells, we only need to run all upstream cells once before we can run the cell in question.
