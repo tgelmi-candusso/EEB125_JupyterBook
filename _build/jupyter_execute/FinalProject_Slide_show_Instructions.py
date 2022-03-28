@@ -47,7 +47,7 @@
 # - The code cell below is hidden, but you should be able to see the bar plot.
 # - If you select the cell below then click on the hide code cell icon again the code will become visible.
 
-# In[11]:
+# In[1]:
 
 
 import matplotlib.pyplot as plt

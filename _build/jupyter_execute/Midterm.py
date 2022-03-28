@@ -93,7 +93,7 @@
 stnum = '''
 
 
-# In[ ]:
+# In[2]:
 
 
 '''# check that stnum is type int
@@ -109,7 +109,7 @@ assert type(stnum) == int'''
 # 
 # __(1 mark)__
 
-# In[ ]:
+# In[3]:
 
 
 '''#
@@ -124,13 +124,13 @@ seed = int(str(stnum)[n-3:n])'''
 # 
 # Read the tab-separated text file `pantheria.txt` into a `pandas` `DataFrame` named `pantheria_alldat`. __(1 mark)__
 
-# In[ ]:
+# In[4]:
 
 
 # put your answer in this cell
 
 
-# In[ ]:
+# In[5]:
 
 
 '''# Check that the data makes sense
@@ -141,7 +141,7 @@ pantheria_alldat.head()'''
 # 
 # Run the code cell below.  This code uses `pandas.DataFrame.sample` to take a random sample of rows from `pantheria_alldat`, and name the resulting `DataFrame` `pantheria_dat`. __(1 mark)__
 
-# In[ ]:
+# In[6]:
 
 
 '''#
@@ -151,7 +151,7 @@ pantheria_alldat.head()'''
 pantheria_dat = pantheria_alldat.sample(frac = 0.75, random_state = seed)'''
 
 
-# In[ ]:
+# In[7]:
 
 
 '''# Check that you have a dataframe with the correct shape
@@ -189,7 +189,7 @@ assert expected_shape == pantheria_dat.shape, error_msg'''
 # 
 # __(1 mark)__
 
-# In[ ]:
+# In[8]:
 
 
 # put your answer in this cell
@@ -199,20 +199,20 @@ assert expected_shape == pantheria_dat.shape, error_msg'''
 # 
 # Use the list from Step 1a to select the columns in `important_columns` from `pantheria_dat`.  Name the `DataFrame` with `important_columns` `sub_pantheria`. __(1 mark)__
 
-# In[ ]:
+# In[9]:
 
 
 # put your answer in this cell
 
 
-# In[ ]:
+# In[10]:
 
 
 # Check your work
 '''sub_pantheria.head()'''
 
 
-# In[ ]:
+# In[11]:
 
 
 # check the shape of your dataframe
@@ -242,7 +242,7 @@ assert expected_shape == sub_pantheria.shape, error_msg'''
 
 # Below is a dictionary where we have provided all the keys. Edit the dictionary to add the appropriate values. __(1 mark)__
 
-# In[ ]:
+# In[12]:
 
 
 '''columnnames = {
@@ -256,7 +256,7 @@ assert expected_shape == sub_pantheria.shape, error_msg'''
 }'''
 
 
-# In[ ]:
+# In[13]:
 
 
 '''# Check your work
@@ -267,13 +267,13 @@ columnnames'''
 # 
 # Use `columnnames` from Step 2 to rename the columns of `sub_pantheria`, and name the new `DataFrame` `sub_pantheria_rename`. __(1 mark)__
 
-# In[ ]:
+# In[14]:
 
 
 # put your answer in this cell
 
 
-# In[ ]:
+# In[15]:
 
 
 '''# check your work
@@ -314,13 +314,13 @@ assert expected_colnames == list(sub_pantheria_rename)'''
 # - `'maturity_yrs'`: defined as `'maturity_d'` converted from days to years (NB: 1 year = 365 days). __(1 marks)__
 # 
 
-# In[ ]:
+# In[16]:
 
 
 # your answer goes here
 
 
-# In[ ]:
+# In[17]:
 
 
 '''# Check your work
@@ -335,13 +335,13 @@ sub_pantheria_rename.head()'''
 # 
 # __(1 mark)__
 
-# In[ ]:
+# In[18]:
 
 
 # your answer goes here
 
 
-# In[ ]:
+# In[19]:
 
 
 '''# Check your work
@@ -360,13 +360,13 @@ sub_pantheria_rename.head()'''
 # 
 # Create a new column in `sub_pantheria_rename` named `'large_litters'` that is defined as `True` if `'litter_size'` is greater than one, and `False` otherwise. __(1 mark)__
 
-# In[ ]:
+# In[20]:
 
 
 # put your answer here
 
 
-# In[ ]:
+# In[21]:
 
 
 '''# Check your work
@@ -381,13 +381,13 @@ sub_pantheria_rename.head()'''
 # 
 # - create a `DataFrame` from `sub_pantheria_rename` containing only the rows with large litters (using column `'large_litters'`, which is a Boolean `Series`), and these two columns: `'growth_rate_kg_yr'` and `'order'`. Name that new dataframe `largelit_growthrate`. __(1 mark)__
 
-# In[ ]:
+# In[22]:
 
 
 # put your answer here
 
 
-# In[1]:
+# In[23]:
 
 
 '''# Check your work
@@ -401,13 +401,13 @@ assert expected_shape == largelit_growthrate.shape, error_msg'''
 
 # - Now compute the value of `'growth_rate_kg_yr'` in `largelit_growthrate` such that 10% of mammals have a growth rate greater than this value (HINT: use the `quantile` function in `pandas`). Name this value `only10`. __(1 mark)__
 
-# In[ ]:
+# In[24]:
 
 
 # put your answer here
 
 
-# In[3]:
+# In[25]:
 
 
 '''# Check your work
@@ -425,13 +425,13 @@ only10'''
 # - compute the frequency distribution of `'order'` in `large_orders` and name it `order_dist`. __(1 mark)__
 # 
 
-# In[ ]:
+# In[26]:
 
 
 # put your answer here
 
 
-# In[ ]:
+# In[27]:
 
 
 '''# Check your work
@@ -442,13 +442,13 @@ order_dist'''
 # 
 # `order_dist.index` will extract the names of the rows of `order_dist`. (Try it! Copy and paste `order_dist.index` to see its value.) Use `order_dist.index` to extract the name of the order that is most frequent, and name it `highest_order_name`. __(1 mark)__
 
-# In[ ]:
+# In[28]:
 
 
 # put your answer here
 
 
-# In[ ]:
+# In[29]:
 
 
 '''# Check your work
@@ -461,13 +461,13 @@ highest_order_name'''
 # 
 # NB:  `growth_largelit_dist` should only have the distributions of `'growth_rate_kg_yr'` by `'large_litters'`.
 
-# In[ ]:
+# In[30]:
 
 
 # put your answer here
 
 
-# In[ ]:
+# In[31]:
 
 
 '''# Check your work

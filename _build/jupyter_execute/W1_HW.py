@@ -142,7 +142,7 @@ type('Hello World')
 # In[7]:
 
 
-print('Remember how running a Python cell displays the value of the last expression?')
+'''print('Remember how running a Python cell displays the value of the last expression?')
 print('Function `print` lets us show several results at once.')
 print('Calling print with no arguments starts a new line:')
 print()
@@ -160,7 +160,7 @@ print(name + ' is ' + str(height) + ' cm tall.')
 # For even more magic, tell Python to use a "format string":
 # Start the whole string with the letter 'f'. How cool is that?
 # Much easier for us humans to read than in the previous print statement!\n",
-print(f'{name} is {height} cm tall.')
+print(f'{name} is {height} cm tall.')'''
 
 
 # ## Wow, that's a lot!
